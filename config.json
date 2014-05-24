@@ -1,0 +1,26 @@
+{
+    "global-name": "vocabulary",
+    "prefix": "voc",
+    "action-identifier": "action",
+    "default-event": "click",
+    "events": [
+        "blur",
+        "change",
+        "click",
+        "dblclick",
+        "focus",
+        "focusin",
+        "focusout",
+        "keydown",
+        "keypress",
+        "keyup",
+        "mousedown",
+        "mouseenter",
+        "mouseleave",
+        "mousemove",
+        "mouseout",
+        "mouseover",
+        "mouseup",
+        "submit"
+    ]
+}

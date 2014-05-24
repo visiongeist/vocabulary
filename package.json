@@ -1,0 +1,34 @@
+{
+    "name": "vocabulary",
+    "version": "0.9.0",
+    "description": "Vocabulary manager to maintain a collection of actions triggered on the frontend",
+    "homepage": "http://damien.antipa.at",
+    "author": "Damien Antipa",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/visiongeist/vocabulary.git"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.0",
+        "grunt-contrib-uglify": "~0.4.0",
+        "grunt-contrib-jshint": "~0.10.0",
+        "grunt-replace": "~0.7.0",
+        "grunt-jsdoc": "~0.5.0"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/visiongeist/vocabulary.git"
+        }
+    ],
+    "main": "build/vocabulary.js",
+    "scripts": {
+        "build": "npm install && grunt"
+    }
+}
