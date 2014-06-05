@@ -27,6 +27,8 @@
      * A dictionary is a collection of chapters
      * @constructor Dictionary
      * @augments Chapter
+     *
+     * @param name
      */
     function Dictionary(name) {
         this._chapters = {};
@@ -48,7 +50,7 @@
     /**
      * A chapter is a collection of words which are associated to actions
      * @constructor Chapter
-     * @param  {String} [name] name of a chapter or empty to list all
+     * @param  {String} name name of a chapter or empty to list all
      */
     function Chapter(name) {
         this.name = name;

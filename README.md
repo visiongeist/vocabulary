@@ -3,7 +3,7 @@
 
 Vocubulary is a tiny helper which allows you to give your HTML the semantic it deserves when you add your custom Javascript functionality.
 
-*Short story*
+*Short Story*
 
 Let's assume you have a button which should execute some Javascript code
 
@@ -16,7 +16,7 @@ Rather then writing a piece of code which binds an event handler and executes th
 var btn = document.getElementById('myButton');
 
 btn.addEventListener('click', function () {
-  // let's do sth
+  alert('you clicked me');
 });
 ```
 
@@ -40,7 +40,7 @@ Technically **vocabulary** provides 3 broad terms: Dictionary, Chapter, Word
 Vocabulary -> has dictionaries -> [has chapters ->] has words
 
 
-Basic usage
+Basic Usage
 ------------------------------------
 
 To define a new word we will access the global object called vocabulary. 
@@ -54,13 +54,13 @@ vocabulary.dict('todo');
 Now we are able to add new words to the dictionary.
 ```js
 vocabulary.dict('todo').add('deleteEntry', function (opt) {
-	// do sth
+	console.log('entry deleted');
 });
 ```
 Or to one of its chapters.
 ```js
 vocabulary.dict('todo').chap('foo').add('deleteEntry', function (opt) {
-	// do sth
+	console.log('entry deleted');
 });
 ```
 Since we have our code in place, we could simple trigger it.
@@ -74,7 +74,7 @@ Or properly annotate our button (or any other HTML markup) to trigger the action
 <button id="myButton" class="voc-action voc-todo-deleteEntry">Click me</button>
 ```
 
-Additional things
+Additional Things
 ------------------------------------
 
 ##### .voc-action
@@ -121,19 +121,19 @@ Word definitions are independent of the event type and usually reacts on click e
 
 The added double dash will limit the execution of the handler to change events. Most of the default browser events are observed by the vocabulary. Adding new events which can be used is done through a build configuration or by calling *vocabulary.addEvent('customEvent')*.
 
-##### API documentation
+##### API Documentation
 
-The JSdoc is build under */docs*. Sorry for the ugly default template.
+The [JSdoc](https://rawgit.com/visiongeist/vocabulary/master/docs/index.html) is build under */docs* or viewable through [rawgit](https://rawgit.com/visiongeist/vocabulary/master/docs/index.html). Sorry for the ugly default template. 
 
-How to add plugins/helpers
+How to add Plugins/Helpers
 ------------------------------------
 coming soon
 
 Example
 ------------------------------------
-I adapted the todo-mvc example from jQuery to vocabulary quickly. Available under */example*
+I adapted the [todo-mvc example](https://rawgit.com/visiongeist/vocabulary/master/example/index.html) from jQuery to vocabulary quickly. Available under */example*
 
-How to customize your build
+How to Customize your Build
 ------------------------------------
 You may customize several build options before running grunt to change the prefix or the global namespace. *config.json* should be self-explainable.
 
@@ -141,6 +141,6 @@ Dependencies
 ------------------------------------
 none
 
-Browser support
+Browser Support
 ------------------------------------
 will list it ... soon soon soon
