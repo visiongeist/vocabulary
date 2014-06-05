@@ -97,9 +97,16 @@ The handler function which was defined through *add()* will have the *this* obje
 As described the first argument of the handler function will contain an object. This object contains a key/value list of values passed through *data-* attributes.
 
 ```html
-<button id="myButton" class="voc-action voc-todo-deleteEntry" data-my-param="foo">Click me</button>
+<button id="myButton" class="voc-action voc-todo-deleteEntry" data-entry-name="foo">Click me</button>
 ```
-The *deleteEntry* will be able to access the value through its first argument *opt.myParam*
+
+```js
+vocabulary.dict('todo').add('deleteEntry', function (opt) {
+  console.log('entry '+ opt.entryName +' deleted');
+});
+```
+
+The *deleteEntry* will be able to access the value through its first argument *opt.entryName*
 
 ##### Events
 
