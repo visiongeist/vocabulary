@@ -143,4 +143,7 @@ none
 
 Browser Support
 ------------------------------------
-will list it ... soon soon soon
+IE10+, evergreens Chrome, Firefox, Android 3.0+, iOS 5.0+
+
+[classList](https://gist.github.com/devongovett/1381839) polyfill for IE 9.0
+[addEventListener](http://css-tricks.com/snippets/javascript/addeventlistner-polyfill/) polyfill for IE 8.0 and older
