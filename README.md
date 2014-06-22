@@ -1,7 +1,7 @@
 [Vocabulary](http://github.com/visiongeist/vocabulary)
 ==================================================
 
-Vocubulary is a tiny helper which allows you to give your HTML the semantic it deserves when you add your custom Javascript functionality.
+Vocabulary connects semantic Markup with corresponding Javascript functionality.
 
 *Short Story*
 
