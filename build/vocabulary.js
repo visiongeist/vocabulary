@@ -1,17 +1,17 @@
 /*!
- * Vocabulary 0.9.0
+ * Vocabulary 0.9.1
  * https://github.com/visiongeist/vocabulary
  *
  *
  * Copyright 2014 Damien Antipa
  * Released under the MIT license
  *
- * Date: 2014-06-05T23:09:05.128Z
+ * Date: 2014-06-22T10:38:51.324Z
  */
 (function (win, undefined) {
 
     // const
-    var VERSION = '0.9.0',
+    var VERSION = '0.9.1',
         DEBUG = false,
         GLOBAL_NAME = 'vocabulary',
         PREFIX = 'voc',
@@ -195,7 +195,7 @@
                     if (hit[i].classList[j].indexOf(PREFIX + '-') === 0 && hit[i].classList[j] !== actionId) {
 
                         // PREFIX-DICT(-CHAP)-CMD(--EVENT)
-                        var cmd = hit[i].classList[j].match(/([^-]+)-([^-]+)([^-]*)-([^-]+)--(.*)/),
+                        var cmd = hit[i].classList[j].match(/([^-]+)-([^-]+)-?([^-]*)-([^-]+)[-]{0,2}(.*)/),
                             options = {},
                             def = {
                                 prefix: PREFIX,

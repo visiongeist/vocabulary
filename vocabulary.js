@@ -195,7 +195,7 @@
                     if (hit[i].classList[j].indexOf(PREFIX + '-') === 0 && hit[i].classList[j] !== actionId) {
 
                         // PREFIX-DICT(-CHAP)-CMD(--EVENT)
-                        var cmd = hit[i].classList[j].match(/([^-]+)-([^-]+)([^-]*)-([^-]+)--(.*)/),
+                        var cmd = hit[i].classList[j].match(/([^-]+)-([^-]+)-?([^-]*)-([^-]+)[-]{0,2}(.*)/),
                             options = {},
                             def = {
                                 prefix: PREFIX,

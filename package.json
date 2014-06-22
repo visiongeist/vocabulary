@@ -1,6 +1,6 @@
 {
     "name": "vocabulary",
-    "version": "0.9.0",
+    "version": "0.9.1",
     "description": "Vocabulary manager to maintain a collection of actions triggered on the frontend",
     "homepage": "http://damien.antipa.at",
     "author": "Damien Antipa",
