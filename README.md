@@ -16,7 +16,7 @@ Rather then writing a piece of code which binds an event handler and executes th
 var btn = document.getElementById('myButton');
 
 btn.addEventListener('click', function () {
-  alert('you clicked me');
+  alert('you deleted an entry');
 });
 ```
 
